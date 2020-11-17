@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
-import { HeroesMenu } from './heroesmenu';
-import { ActionsMenu } from './actionmenu';
-import { EnemiesMenu } from './enemiesmenu';
+import { HeroesMenu } from './heroesMenu';
+import { ActionsMenu } from './actionMenu';
+import { EnemiesMenu } from './enemiesMenu';
 import { Message } from './message';
 
 class FinUIScene extends Phaser.Scene {

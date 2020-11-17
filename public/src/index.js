@@ -3,7 +3,7 @@ import { BootScene } from './bootScene';
 import { WorldScene } from './worldScene';
 import { BattleScene } from './battleScene';
 import { FinalBattleScene } from './finalbattle';
-import { FinUIScene } from './fin-uiscene';
+import { FinUIScene } from './finUiscene';
 import { UIScene } from './UIScene';
 import { GameEndScene } from './gameendscene';
 
