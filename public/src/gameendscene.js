@@ -32,7 +32,7 @@ class GameEndScene extends Phaser.Scene {
     save.onclick = async () => {
       if (this.userplayer.name !== '') {
         domUtils.deleteEleContent('game-end');
-        save.display ='none';
+        save.display = 'none';
         const results = await apilibrary.sendScores(this.userplayer.name, this.userplayer.score); // eslint-disable-line no-unused-vars
       } else {
         alert('There was an error'); // eslint-disable-line no-alert

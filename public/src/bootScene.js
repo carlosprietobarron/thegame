@@ -14,7 +14,7 @@ class BootScene extends Phaser.Scene {
 
     // load items images
     this.load.spritesheet('item', './assets/items.png', { frameWidth: 16, frameHeight: 16 });
-   
+
     // map tiles
     this.load.image('tiles', './assets/map/roguelikeSheet.png');
 
@@ -28,8 +28,8 @@ class BootScene extends Phaser.Scene {
     // load enemies
     this.load.image('dragonblue', './assets/dragonblue.png');
     this.load.image('dragonorrange', './assets/dragonorrange.png');
-     // load final boss
-     this.load.spritesheet('boss', './assets/bigboss.png', { frameWidth: 64, frameHeight: 64 });
+    // load final boss
+    this.load.spritesheet('boss', './assets/bigboss.png', { frameWidth: 64, frameHeight: 64 });
     // load background initial scene
     this.load.image('backg', './assets/theQuestCover.png');
     // startbtn

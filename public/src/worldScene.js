@@ -22,7 +22,7 @@ class WorldScene extends Phaser.Scene {
     const obstacles = map.createStaticLayer('Obstacles', tiles, 0, 0);
     obstacles.setCollisionByExclusion([-1]);
     // Create score text
-    this.scoreLabel = this.add.text(0,0, 'Score: 0');
+    this.scoreLabel = this.add.text(0, 0, 'Score: 0');
     // insert player
     this.player = this.physics.add.sprite(50, 100, 'player', 48);
     // player boundaries
