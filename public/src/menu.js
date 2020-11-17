@@ -30,7 +30,7 @@ class Menu extends Phaser.GameObjects.Container {
   moveSelectionDown() {
     this.menuItems[this.menuItemIndex].deselect();
     do {
-      this.menuItemIndexi += 1;
+      this.menuItemIndex += 1;
       if (this.menuItemIndex >= this.menuItems.length) this.menuItemIndex = 0;
     } while (!this.menuItems[this.menuItemIndex].active);
     this.menuItems[this.menuItemIndex].select();
