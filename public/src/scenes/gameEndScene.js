@@ -3,7 +3,7 @@ import { User } from '../entities/user';
 import { domUtils } from '../entities/domUtils';
 // import spritesheet from '../assets/map/spritesheet.png'
 // import { WorldScene } from './worldScene'
-import { apilibrary } from '../entities/apiscore';
+import { apilibrary } from '../entities/apiScore';
 
 class GameEndScene extends Phaser.Scene {
   constructor() {
