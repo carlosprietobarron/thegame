@@ -26,7 +26,7 @@ class FinalBattleScene extends Phaser.Scene {
     this.add.existing(warrior);
 
     // player character - mage
-    const mage = new PlayerCharacter(this, 250, 100, 'player', 21, 'Mage', 80, 8);
+    const mage = new PlayerCharacter(this, 250, 100, 'player', 21, 'Mage', 70, 8);
     this.add.existing(mage);
 
     const bigboss = new Enemy(this, 50, 50, 'boss', null, 'BigBoss', 100, 15);
