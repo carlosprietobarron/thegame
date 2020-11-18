@@ -22,7 +22,7 @@
 
 ## Live Demo
 
-[The Quest](https://elastic-hopper-db127b.netlify.app/)
+[The Quest](https://dazzling-turing-b53986.netlify.app/)
 
 ## INSTALLATION INSTRUCTIONS
 
