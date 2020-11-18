@@ -2,7 +2,7 @@ import Phaser from 'phaser';
 import { BootScene } from './scenes/bootScene';
 import { WorldScene } from './scenes/worldScene';
 import { BattleScene } from './scenes/battleScene';
-import { FinalBattleScene } from './scenes/finalbattle';
+import { FinalBattleScene } from './scenes/finalBattle';
 import { FinUIScene } from './scenes/finUiscene';
 import { UIScene } from './scenes/UIScene';
 import { GameEndScene } from './scenes/gameEndScene';
