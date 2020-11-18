@@ -2,6 +2,7 @@ import Phaser from 'phaser';
 import { ItemFind } from '../entities/items';
 import { Enemy } from '../entities/enemy';
 import { User } from '../entities/user';
+import { domUtils } from '../entities/domUtils';
 
 class WorldScene extends Phaser.Scene {
   constructor() {
@@ -12,6 +13,10 @@ class WorldScene extends Phaser.Scene {
     // get user data
     const userData = JSON.parse(localStorage.getItem('user'));
     this.userplayer = new User(userData.name, userData.score);
+
+    // hide button
+    const scbtn = domUtils.element('scoresbtn');
+    scbtn.style.display = 'none';
 
     // set the map
 
@@ -54,7 +59,7 @@ class WorldScene extends Phaser.Scene {
 
     this.anims.create({
       key: 'up',
-      frames: this.anims.generateFrameNumbers('player', { frames: [81, 80, 81, 83] }),
+      frames: this.anims.generateFrameNumbers('player', { frames: [85, 84, 85, 86] }),
       frameRate: 10,
       repeat: -1,
     });

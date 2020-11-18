@@ -111,7 +111,7 @@ class FinalBattleScene extends Phaser.Scene {
     // sleep the UI
     this.scene.sleep('FinUIScene');
     // return to WorldScene and sleep current BattleScene
-    this.scene.switch('WorldScene');
+    this.scene.start('WorldScene');
   }
 
   // when the player have selected the enemy to be attacked
@@ -130,7 +130,7 @@ class FinalBattleScene extends Phaser.Scene {
 
   exitGame() {
     this.scene.sleep('UIScene');
-    this.scene.switch('GameEndScene');
+    this.scene.start('GameEndScene', { saveScr: 'yes' });
   }
 
   wake() {

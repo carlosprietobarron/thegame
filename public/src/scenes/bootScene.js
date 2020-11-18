@@ -57,6 +57,11 @@ class BootScene extends Phaser.Scene {
     // let playbutton = this.add.image(this.game.renderer.width / 2, this.game.renderer.height * 0.50,"startbtn");
     // this.scene.start("WorldScene");
 
+    this.btn = domUtils.createButtonFsy('SCORES', 'scoresbtn', 'scrBtn');
+    this.btn.onclick = () => {
+      this.scene.start('GameEndScene', { saveScr: ' no' });
+    };
+
     this.playbutton = this.add.sprite(
       this.game.renderer.width / 2,
       this.game.renderer.height * 0.50,

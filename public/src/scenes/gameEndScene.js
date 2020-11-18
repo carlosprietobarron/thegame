@@ -10,15 +10,23 @@ class GameEndScene extends Phaser.Scene {
     super({ key: 'GameEndScene' });
   }
 
+  init(data) {
+    this.savebtn = data.saveScr;
+  }
+
   create() {
     // this.add.image(this.game.renderer.width / 2, this.game.renderer.height * 0.20, "logo");
     this.add.image(0, 0, 'bg').setOrigin(0);
 
-    const userData = JSON.parse(localStorage.getItem('user'));
-    this.userplayer = new User(userData.name, userData.score);
-
     // this.sound.play("startMusic");
-    this.saveScore();
+    if (this.savebtn === 'yes') {
+      const userData = JSON.parse(localStorage.getItem('user'));
+      this.userplayer = new User(userData.name, userData.score);
+      this.saveScore();
+    } else {
+      this.showScore('game-end');
+      this.displayList();
+    }
   }
 
   saveScore() { // eslint-disable-line class-methods-use-this
@@ -66,6 +74,21 @@ class GameEndScene extends Phaser.Scene {
       liScore.textContent = texto;
       ulScores.appendChild(liScore);
     }
+    const btn = domUtils.createButtonFsy('RESTART', 'game-end', 'rstBtn');
+    btn.onclick = () => {
+      domUtils.deleteEleContent('game-end');
+      location = window.location;
+    };
+  }
+
+  // eslint-disable-next-line class-methods-use-this
+  displayList() {
+    const scbtn = domUtils.element('scoresbtn');
+    scbtn.style.display = 'none';
+    const frm = domUtils.element('user-form');
+    frm.style.display = 'none';
+    const gend = domUtils.element('game-end');
+    gend.style.display = 'block';
   }
 }
 

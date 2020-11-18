@@ -34,8 +34,24 @@ const domUtils = (function du() {
     el.hidden = false;
   };
 
+  const createButtonFsy = (text, parentId, id) => {
+    const parent = element(parentId);
+    const thisbtn = document.createElement('button');
+    thisbtn.setAttribute('id', id);
+    thisbtn.setAttribute('class', 'fantasy');
+    const span1 = document.createElement('span');
+    span1.setAttribute('class', 'double');
+    const span2 = document.createElement('span');
+    span2.textContent = text;
+    span2.setAttribute('class', 'text');
+    span1.appendChild(span2);
+    thisbtn.appendChild(span1);
+    parent.appendChild(thisbtn);
+    return thisbtn;
+  };
+
   return {
-    deleteEleContent, setAttributes, eventFire, element, dismissComponent, showComponent,
+    deleteEleContent, setAttributes, eventFire, element, dismissComponent, showComponent, createButtonFsy,
   };
 }());
 
