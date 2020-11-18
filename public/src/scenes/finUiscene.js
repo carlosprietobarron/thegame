@@ -1,12 +1,12 @@
 import Phaser from 'phaser';
-import { HeroesMenu } from './heroesMenu';
-import { ActionsMenu } from './actionMenu';
-import { EnemiesMenu } from './enemiesMenu';
-import { Message } from './message';
+import { HeroesMenu } from '../entities/heroesMenu';
+import { ActionsMenu } from '../entities/actionMenu';
+import { EnemiesMenu } from '../entities/enemiesMenu';
+import { Message } from '../entities/message';
 
-class UIScene extends Phaser.Scene {
+class FinUIScene extends Phaser.Scene {
   constructor() {
-    super({ key: 'UIScene' });
+    super({ key: 'FinUIScene' });
   }
 
   create() {
@@ -35,7 +35,7 @@ class UIScene extends Phaser.Scene {
     this.menus.add(this.actionsMenu);
     this.menus.add(this.enemiesMenu);
 
-    this.battleScene = this.scene.get('BattleScene');
+    this.battleScene = this.scene.get('FinalBattleScene');
 
     // listen for keyboard events
     this.input.keyboard.on('keydown', this.onKeyInput, this);
@@ -118,4 +118,4 @@ class UIScene extends Phaser.Scene {
   }
 }
 
-export { UIScene };
+export { FinUIScene };

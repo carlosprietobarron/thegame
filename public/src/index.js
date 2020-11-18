@@ -1,11 +1,11 @@
 import Phaser from 'phaser';
-import { BootScene } from './bootScene';
-import { WorldScene } from './worldScene';
-import { BattleScene } from './battleScene';
-import { FinalBattleScene } from './finalbattle';
-import { FinUIScene } from './finUiscene';
-import { UIScene } from './UIScene';
-import { GameEndScene } from './gameendscene';
+import { BootScene } from './scenes/bootScene';
+import { WorldScene } from './scenes/worldScene';
+import { BattleScene } from './scenes/battleScene';
+import { FinalBattleScene } from './scenes/finalbattle';
+import { FinUIScene } from './scenes/finUiscene';
+import { UIScene } from './scenes/UIScene';
+import { GameEndScene } from './scenes/gameEndScene';
 
 const config = {
   type: Phaser.AUTO,

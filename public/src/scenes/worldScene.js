@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
-import { ItemFind } from './items';
-import { Enemy } from './enemy';
-import { User } from './user';
+import { ItemFind } from '../entities/items';
+import { Enemy } from '../entities/enemy';
+import { User } from '../entities/user';
 
 class WorldScene extends Phaser.Scene {
   constructor() {

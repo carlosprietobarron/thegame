@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
-import { PlayerCharacter } from './playerCharacter';
-import { Enemy } from './enemy';
-import { User } from './user';
+import { PlayerCharacter } from '../entities/playerCharacter';
+import { Enemy } from '../entities/enemy';
+import { User } from '../entities/user';
 
 class FinalBattleScene extends Phaser.Scene {
   constructor() {

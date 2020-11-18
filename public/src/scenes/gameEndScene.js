@@ -1,9 +1,9 @@
 import Phaser from 'phaser';
-import { User } from './user';
-import { domUtils } from './domUtils';
+import { User } from '../entities/user';
+import { domUtils } from '../entities/domUtils';
 // import spritesheet from '../assets/map/spritesheet.png'
 // import { WorldScene } from './worldScene'
-import { apilibrary } from './apiscore';
+import { apilibrary } from '../entities/apiscore';
 
 class GameEndScene extends Phaser.Scene {
   constructor() {

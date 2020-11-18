@@ -1,6 +1,6 @@
 import Phaser from 'phaser';
-import { User } from './user';
-import { domUtils } from './domUtils';
+import { User } from '../entities/user';
+import { domUtils } from '../entities/domUtils';
 
 class BootScene extends Phaser.Scene {
   constructor() {
