@@ -83,7 +83,7 @@ class BattleScene extends Phaser.Scene {
         // call the enemy"s attack function
         this.units[this.index].attack(this.heroes[r]);
         // add timer for the next turn, so will have smooth gameplay
-        this.time.addEvent({ delay: 3000, callback: this.nextTurn, callbackScope: this });
+        this.time.addEvent({ delay: 3005, callback: this.nextTurn, callbackScope: this });
       }
     }
   }
@@ -130,6 +130,7 @@ class BattleScene extends Phaser.Scene {
       this.units[this.index].attack(this.enemies[target]);
     }
     // next turn in 3 seconds
+
     this.time.addEvent({ delay: 3000, callback: this.nextTurn, callbackScope: this });
   }
 
