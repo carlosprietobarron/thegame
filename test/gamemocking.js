@@ -1,12 +1,12 @@
 import 'jest-canvas-mock';
 import Phaser from 'phaser';
-import { BootScene } from '../public/src/bootScene';
-import { WorldScene } from '../public/src/worldScene';
-import { BattleScene } from '../public/src/battleScene';
-import { FinalBattleScene } from '../public/src/finalbattle';
-import { FinUIScene } from '../public/src/fin-uiscene';
-import { UIScene } from '../public/src/UIScene';
-import { GameEndScene } from '../public/src/gameendscene';
+import { BootScene } from '../public/src/scenes/bootScene';
+import { WorldScene } from '../public/src/scenes/worldScene';
+import { BattleScene } from '../public/src/scenes/battleScene';
+import { FinalBattleScene } from '../public/src/scenes/finalBattle';
+import { FinUIScene } from '../public/src/scenes/finUiscene';
+import { UIScene } from '../public/src/scenes/UIScene';
+import { GameEndScene } from '../public/src/scenes/gameendscene';
 
 const startGame = (() => {
   const mockConfig = {

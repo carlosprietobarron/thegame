@@ -22,7 +22,6 @@ describe('Game Score API interfase', () => {
   }));
 
   test('Gets score and checks if correct amount', async () => {
-    scores;
     const scores = await getScores();
     expect(scores[0].score).toEqual(300);
   });

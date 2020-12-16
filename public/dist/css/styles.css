@@ -8,6 +8,14 @@
   text-align: center;
 }
 
+#scoresbtn {
+  position: absolute;
+  top: 5px;
+  left: 5%;
+  border-radius: 10px;
+  text-align: center;
+}
+
 .h-score {
   color: red;
   font-size: x-large;
@@ -266,3 +274,59 @@ label {
             transform: translate(-13px, 60%) scale(1.4, 0.7);
   }
 }
+
+/* buttons */
+
+ button {
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  position: relative;
+  font-size:1.5em;
+ }
+
+ .fantasy span, .fantasy:after, .double:after {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+ }
+ .fantasy:after, .double:after {
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+ }
+ .fantasy {
+  background-color: #600;
+  border-width: 0.15em;
+  border-style: outset outset outset inset;
+  border-color: #FB2;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0.09375em #000;
+ }
+ .fantasy:after {
+  box-shadow: 0px 0px 0.25em 0.25em rgba(0,0,0,0.5) inset;
+ }
+ .double {
+  position: relative;
+  border: 0.2em double #FB2;
+ }
+ .double:after {
+  box-shadow: 0px 0px 0.25em 0.2em rgba(0,0,0,0.7) inset;
+ }
+ .text {
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+  color:#FB2;
+  font-weight: bold;
+  padding: 0.5em 1.75em;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 0.15625em #000;
+  
+  background: linear-gradient(#B00, #A00, #B00);
+  border: 0.25em outset #A00; 
+ }
